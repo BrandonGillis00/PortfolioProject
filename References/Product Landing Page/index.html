@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Landing</title>
+    </head>
+    <body>
+        <div id="page-container">
+            <header id="header">
+                <div class="logo">
+                    <img
+                    id="header-img"
+                    src="https://img.freepik.com/free-vector/creative-barbecue-logo-template_23-2149017951.jpg?w=826&t=st=1659410983~exp=1659411583~hmac=f39a2434eef0d0b17fe9c28ac1d6f61d38ca41ac113c4038b4d693a7e6264629"
+                    alt="Restaurant Logo"
+                    />
+                    <h1>BARBECUE RESTAURANT</h1>
+                </div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#About_Us">About Us</a></li>
+                        <li><a class="nav-link" href="#Booking">Booking</a></li>
+                        <li><a class="nav-link" href="#Contact_Us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="newsletter">
+                <h2>Enter your E-Mail to receive our weekly newsletter!</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input
+                    name="email"
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    />
+                    <input
+                    id="submit"
+                    type="submit"
+                    value="SUBMIT"
+                    />
+                </form>
+            </section>
+
+            <div class="container">
+                <section id="About_Us">
+                    <div class="info">
+                        <h2>Locally Sourced</h2>
+                        <p>
+                            Our restaurant uses ingredients such as meat and vegetables sourced from local farmers
+                            and producers. We support local businesses, and so should you!
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>Ethical Wages</h2>
+                        <p>
+                            Our waitstaff and employees are paid healthy wages above the industry standard.
+                            We do this to take the burden off of our customers feeling the need to tip.
+                            We believe it is the employer's responsibility to provide a living wage.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2>Live Perfomances</h2>
+                        <p>
+                            Every Friday and Saturday we support local artist's by giving them the opportunity 
+                            to shine and help mold the atmosphere of our thriving restaurant. Artist's can inquire below.
+                        </p>
+                    </div>
+                </section>
+                <section id="vid">
+                    <video id="video" height="400" controls autoplay muted>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-people-pouring-a-warm-drink-around-a-campfire-513-large.mp4">
+                    </video>
+                </section>
+                <section id="Booking">
+                    <div class="book" id="customer">
+                        <div class="heading">Book Reservation</div>
+                        <h2>$20 Deposit</h2>
+                        <p>Book 3 months in advance</p>
+                        <input type="button" value="Contact" class="contact-btn">
+                    </div>
+                    <div class="book" id="solo">
+                        <div class="heading">Solo Artist</div>
+                        <h2>Inquire Only</h2>
+                        <p>Solo Artist looking to perform</p>
+                        <input type="button" value="Contact" class="contact-btn">
+                    </div>
+                    <div class="book" id="band">
+                        <div class="heading">Band Performance</div>
+                        <h2>Inquire Only</h2>
+                        <p>Bands looking to perform</p>
+                        <input type="button" value="Contact" class="contact-btn">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section id="Contact_Us">
+            <div class="contact">
+                <h2>Contact Us!</h2>
+                <p>To book a reservation for dinner, or to book you or your band's performance, inquire below:</p>
+                <div class="contactbox">
+                    <ul>
+                        <li>Phone: <span class="right">(123)456-7890</span></li>
+                        <li>Email: <span class="right">barbecue@restaurant.com</span></li>
+                        <li>Visit us: <span class="right">123 Restaurant Ln.</span></li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+    </body>
+</html>

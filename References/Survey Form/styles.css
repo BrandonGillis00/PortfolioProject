@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+    width: 100%;
+    margin: 3rem auto 0 auto;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-image: linear-gradient(115deg, rgba(255, 154, 158, 0.6), rgba(250, 208, 196, 0.6)), url(https://cdn.pixabay.com/photo/2022/07/19/07/27/lighthouse-7331444_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+}
+
+button {
+    border: none;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.header {
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    background:rgba(169, 45, 45, 0.8);
+    border-radius: 0.5rem;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 150;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+form {
+    background: rgba(169, 45, 45, 0.8);
+    padding: 2.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.entry {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.form-in {
+    display: block;
+    width: 100%;
+    height: 2.75rem;
+    padding: 0.25rem 0.75rem;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+  }
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+}
+  
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.input-textarea {
+    min-height: 150px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+.submit-btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,256 @@
+/*Website color scheme*/
+:root {
+    --main-yellow: #fcbb6d;
+    --main-red: #d8737f;
+    --main-offred: #ab6c82;
+    --main-blue: #685d79;
+    --main-offblue: #475c7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+
+.navhead {
+    margin: auto;
+    margin-left: 1.8rem;
+    font-weight: 700;
+}
+
+#navbar:not(.navhead) {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: var(--main-yellow);
+}
+
+.nav-ul {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    font-size: 2.5rem;
+    padding: 1.8rem;
+    color: black;
+    z-index: 5;
+}
+
+.nav-link:hover {
+    background-color:var(--main-red);
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Welcome Section */
+
+
+#welcome-section:not(.fa-arrow-down-long) {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-offblue);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 6rem;
+    margin-bottom: -10px;
+}
+
+.disclaimer {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--main-red);
+    font-style: italic;
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+}
+
+.descriptor {
+    color: var(--main-red);
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 1;
+    margin-bottom: 10vh;
+}
+
+#welcome-section i {
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    padding-top: 0;
+    --fa-inverse: var(--main-red);
+    --fa-bounce-height: 3vh;
+    --fa-bounce-start-scale-x: 1;
+    --fa-bounce-start-scale-y: 1;
+    --fa-bounce-jump-scale-x: 1;
+    --fa-bounce-jump-scale-y: 1;
+    --fa-bounce-land-scale-x: 1;
+    --fa-bounce-land-scale-y: 1;
+    --fa-bounce-rebound: 1;
+    --fa-animation-timing: ease-in-out;
+    --fa-animation-duration: 2.7s;
+}
+
+
+/* Projects Section */
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-color: var(--main-offblue);
+}
+
+#projects h2 {
+    max-width: 640px;
+    margin: 0 auto 10rem auto;
+    font-size: 3.7rem;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.grid img {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid a {
+    color: black;
+    background-color: var(--main-yellow);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.grid p {
+    font-size: 2.5rem;
+    padding: 0.2rem;
+    font-weight: 700;
+}
+
+.grid a:hover {
+    background-color: var(--main-red);
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03,1.03);
+    transition: transform 0.2s ease-out;
+}
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+.contact-text {
+    font-size: 6rem;
+    padding-bottom: 3rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.btnlink {
+    color: white;
+    padding: 2rem;
+    font-size: 2.6rem;
+    text-shadow: 2px 2px 2px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.btnlink:hover {
+    transform: translateY(8px);
+}
+
+
+/* Footer Section */
+
+footer {
+    color: white;
+    background-color: rgba(50, 50, 50, 0.8);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 13vh;
+    border-top: 2px solid;
+    border-color: var(--main-red);
+    padding: 0 2rem;
+}
+
+footer p {
+    margin: 2rem;
+    margin-top: 5rem;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 850px) {
+    footer p {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    footer {
+        height: 25vh;
+    }
+}
